@@ -1,4 +1,3 @@
-package com.company;
 import java.util.Scanner;
 public class TicTacToe {
     
@@ -28,8 +27,9 @@ public class TicTacToe {
     public void PrintBoard(){
          for (int i = 0; i < 3; i++) {
             System.out.println("-------------");
-            for (int j = 0; j < 3; j++) {
-                System.out.print("| "+getCellState(board[i][j])+" ");
+            for (int j = 0; j <=3; j++) {
+                if(j!=3) System.out.print("| "+getCellState(board[i][j])+" ");
+                else System.out.print("|");
             }
             System.out.println();
         }
